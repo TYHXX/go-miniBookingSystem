@@ -1,1 +1,1 @@
-# go-MonolithicWebApp
+# go-miniBookingSystem
