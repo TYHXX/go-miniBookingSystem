@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/TYHXX/go-miniBookingSystem/pkg/config"
-	handerls "github.com/TYHXX/go-miniBookingSystem/pkg/handlers"
-	"github.com/TYHXX/go-miniBookingSystem/pkg/render"
+	"github.com/TYHXX/go-miniBookingSystem/internal/config"
+	handerls "github.com/TYHXX/go-miniBookingSystem/internal/handlers"
+	"github.com/TYHXX/go-miniBookingSystem/internal/render"
 
 	"github.com/alexedwards/scs/v2"
 )

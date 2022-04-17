@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/TYHXX/go-miniBookingSystem/pkg/config"
-	handlers "github.com/TYHXX/go-miniBookingSystem/pkg/handlers"
+	"github.com/TYHXX/go-miniBookingSystem/internal/config"
+	handlers "github.com/TYHXX/go-miniBookingSystem/internal/handlers"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"

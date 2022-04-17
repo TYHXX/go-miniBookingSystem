@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/TYHXX/go-miniBookingSystem/pkg/config"
-	"github.com/TYHXX/go-miniBookingSystem/pkg/models"
-	"github.com/TYHXX/go-miniBookingSystem/pkg/render"
+	"github.com/TYHXX/go-miniBookingSystem/internal/config"
+	"github.com/TYHXX/go-miniBookingSystem/internal/models"
+	"github.com/TYHXX/go-miniBookingSystem/internal/render"
 )
 
 //Repo the repository used by the handlers
