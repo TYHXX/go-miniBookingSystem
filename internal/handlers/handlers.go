@@ -7,6 +7,7 @@ import (
 	"net/http"
 
 	"github.com/TYHXX/go-miniBookingSystem/internal/config"
+	"github.com/TYHXX/go-miniBookingSystem/internal/forms"
 	"github.com/TYHXX/go-miniBookingSystem/internal/models"
 	"github.com/TYHXX/go-miniBookingSystem/internal/render"
 )
@@ -52,7 +53,14 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 
 // Reservation renders the make a reservation page and displays form
 func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "make-reservation.page.html", &models.TemplateData{})
+	render.RenderTemplate(w, r, "make-reservation.page.html", &models.TemplateData{
+		Form: forms.New(nil),
+	})
+}
+
+// PostReservation handles the posting of a reservation form
+func (m *Repository) PostReservation(w http.ResponseWriter, r *http.Request) {
+
 }
 
 // Generals renders the room page
