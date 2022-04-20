@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/gob"
 	"errors"
 	"fmt"
 	"log"
@@ -9,6 +10,7 @@ import (
 
 	"github.com/TYHXX/go-miniBookingSystem/internal/config"
 	handerls "github.com/TYHXX/go-miniBookingSystem/internal/handlers"
+	"github.com/TYHXX/go-miniBookingSystem/internal/models"
 	"github.com/TYHXX/go-miniBookingSystem/internal/render"
 
 	"github.com/alexedwards/scs/v2"
@@ -21,6 +23,10 @@ var session *scs.SessionManager
 
 func main() {
 
+	// what am I going to put in the session
+	gob.Register(models.Reservation{})
+
+	// change this to true when in production
 	app.InProduction = false
 
 	session = scs.New()
